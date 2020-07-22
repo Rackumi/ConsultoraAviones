@@ -1,0 +1,297 @@
+html{
+    background-color: #5798DD;
+    background: url("../images/airbus.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    height: 100%;
+}
+/* cabecera del html*/
+header{
+    height: 50%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    color: white;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #333333;
+    opacity: 0.9;
+    border-color: #333333 #DAA548;
+    border-width: 10px;
+    border-style: solid;
+}
+/* estilo de la sección la página*/
+.principal{
+    margin-top: 10%;
+    text-align: center;
+    height: 380px;
+    background-color: #f1f1f1;
+    opacity: 0.8;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-collapse: collapse;
+    border-radius: 11px 11px 11px 11px;
+    -moz-border-radius: 11px 11px 11px 11px;
+    -webkit-border-radius: 11px 11px 11px 11px;
+    border: 2px double #000000;
+    overflow-y: hidden;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+/* estilos de los parrafos con id=a*/
+p.a{
+    color: black;
+}
+
+ul.a{
+    color: black;
+}
+
+#cuadroVuelos{
+    position: absolute;
+    top:320px;
+    left: 550px;
+    background-color: white;
+    width: 600px;
+    height: 350px;
+    border: 4px solid;
+    color: black;
+}
+/* color del cuadro*/
+.cuadro{
+    background-color: white;
+}
+/* pie de la página html*/
+footer {
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    border: 16px solid transparent;
+    display: block;
+    position: fixed;
+    background-color: #333333;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 17px;
+}
+/* class del párrafo del footer*/
+.piePagina{
+    color: white;
+}
+/* estilos del boton buscar vuelos*/
+#form2{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 100;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    background-color: #1883ba;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+/* color del link para mostrar información de la compañia*/
+#pinchaComp{
+    color: #124B88;
+}
+/* estilo del cuadro de dialogo de las compañias */
+#tablaComp{
+    position: absolute;
+    z-index: 15;
+    display: none;
+    background: white;
+    border-radius: 5px;
+}
+
+/* cabecera de la tabla de los vuelos*/
+thead{
+    background-color: #333333 ;
+    color: whitesmoke;
+    border-bottom: solid 3px black;
+}
+
+/*tr de la tabla de los vuelos con la clase Vuelta donde cogemos los tr pares con even*/
+tr.Vuelta:nth-child(even){
+    background-color: lightskyblue;
+    border-bottom: solid 3px black;
+}
+/* tr de la tabla de los vuelos donde cogemos los tr pares y los cambiamos de color */
+tr:nth-child(even){
+    background-color: lightskyblue;
+}
+/* tr y td de la tabla de los vuelos donde se marcan al pasar el cursor por ellos*/
+tr:hover td{
+    background-color: gray;
+    color: white;
+}
+/* tabla donde quitamos la separación de las barras de la tabla*/
+table{
+    border-collapse: collapse;
+}
+/* estilo de la clase contenedor de la página principal*/
+.container{
+    border-collapse: collapse;
+}
+/* estilo del cuadro donde se muestran los vuelos*/
+#pruebas{
+    height: 280px;
+    overflow-y: scroll;
+}
+/* recuadro de las estrellas del dialogo de las compañias y códigos */
+#valora{
+    border: 1px solid black;
+}
+/* estilo del recuadro de los aeropuertos de origen*/
+#Origen{
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 1px double #000000;
+    outline: none;
+    opacity: 0.6;
+}
+/* estilo del recuadro de los aeropuertos de destino*/
+#Destino{
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 1px double #000000;
+    opacity: 0.6;
+}
+/* estilo del recuadro de las fechas de salida*/
+#Salida{
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 1px double #000000;
+    opacity: 0.6;
+}
+/* estilo del recuadro de las fechas de regreso*/
+#Regreso{
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 1px double #000000;
+    opacity: 0.6;
+}
+
+#PrecioMax{
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 1px double #000000;
+    opacity: 0.6;
+}
+
+/* estilo del botón buscar vuelos*/
+#cajaBoton{
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* tamaño de la caja de los aeropuertos de origen*/
+#cajaOrigen{
+    font-size: 18px;
+}
+/* tamaño de la caja de los aeropuertos de destino*/
+#cajaDestino{
+    font-size: 18px;
+}
+/* tamaño de la caja de la fecha de salida*/
+#cajaSalida{
+    font-size: 18px;
+}
+/* tamaño de la caja de la fecha de regreso*/
+#cajaRegreso{
+    font-size: 18px;
+}
+
+#cajaPrecioMax{
+    font-size: 18px;
+}
+
+/* estilo de las fechas de los vuelos de ida*/
+#vIFecha{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* estilo de las fechas de las horas de ida solo para los vuelos de ida*/
+#vIHora{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* estilo de las fechas de la duración de ida solo para los vuelos de ida*/
+#vIDuracion{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* estilo de las fechas de los vuelos de ida con vuelos de vuelta*/
+#vIVFecha{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* estilo de las fechas de las horas de ida con vuelos de vuelta*/
+#vIVHora{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* estilo de las fechas de la duración de ida con vuelos de vuelta*/
+#vIVDuracion{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* estilo de las fechas de los vuelos de vuelta*/
+#vVIFecha{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* estilo de las fechas de las horas de vuelta*/
+#vVIHora{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* estilo de las fechas de la duración de vuelta*/
+#vVIDuracion{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* estilo del boton "Página de inicio"*/
+#botonHome{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    background-color: #DAA548;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+/* estilo del cuadro de información de los vuelos de ida y vuelta con descuento */
+#descuento{
+    background: #DAA548;
+}

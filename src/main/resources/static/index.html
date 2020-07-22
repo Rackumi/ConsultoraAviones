@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- nombre la página web -->
+    <title>Información sobre vuelos</title>
+
+    <meta name = "author" content="Alvaro Brea Arjona"/>
+    <meta charset="utf-8"/>
+    <!-- enlace hacia la página de estilos css -->
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <!-- llamada a los scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="javaScript/autocomplete.js"></script>
+    <link rel="stylesheet" href = "https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href = "css/jquery.rateyo.css">
+
+</head>
+
+<body>
+<!-- titulo principal de la página web -->
+<header>
+    <h1 class="tituloprincipal">CONSULTORA DE VUELOS</h1>
+</header>
+<!-- tabla del formulario-->
+<section class="principal" id="principal">
+<div id="fondotabla" class="titulovuelo">
+    <!-- titulo del formulario-->
+    <h2 id="titulo">Introduzca sus preferencias de su vuelo:</h2>
+    <div class="container">
+        <div class="row">
+            <div>
+                <section id="group" class="tabgroup">
+                    <div id="tab1">
+                        <div class="submit-form">
+                            <div id="f">
+                                <form id="form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <!-- cuadro de origen-->
+                                        <fieldset id="cajaOrigen">
+                                            <label for="Origen" >Origen:</label>
+                                            <input required name="Origen" type="text" id="Origen"
+                                                    placeholder="Ciudad de origen">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <!-- cuadro de destino-->
+                                        <fieldset id="cajaDestino">
+                                            <label for="Destino">Destino:</label>
+                                            <input required name='Destino' type="text" id="Destino"
+                                                   placeholder="Ciudad de destino">
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="col-md-6">
+                                            <!-- cuadro de fecha de salida-->
+                                            <fieldset id="cajaSalida">
+                                                <label for="Salida">Fecha de salida:</label>
+                                                <input name="Salida" type="date" class="Salida" required id="Salida"
+                                                       placeholder="Select date..." onchange='this.form'>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6" id="fechaRegreso">
+                                            <!-- cuadro de fecha de vuelta-->
+                                            <fieldset id="cajaRegreso">
+                                                <label for="Regreso">Fecha de regreso:</label>
+                                                <input name="Regreso" type="date" class="Regreso" id="Regreso"
+                                                       placeholder="Select date..."  onchange='this.form'>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6" id="precioMaximo">
+                                            <!-- cuadro de precio maximo-->
+                                            <fieldset id="cajaPrecioMax">
+                                                <label for="PrecioMax">Seleccione un precio máximo:</label>
+                                                <input name="PrecioMax" type="text" class="PrecioMax" id="PrecioMax"
+                                                       placeholder="Precio máximo"  onchange='this.form'>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6" id="ecologico">
+                                            <!-- cuadro ecologico-->
+                                            <fieldset id="cajaEcologico">
+                                                <label for="soloEcologico"> Solo vuelos ecologicos</label>
+                                                <input name="eco" type="radio" class="soloEcologico" id="soloEcologico">
+                                                <label for="ambosTipos"> Ambos tipos</label>
+                                                <input name="eco" type="radio" class="ambosTipos" id="ambosTipos">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <!-- cuadro del botón de buscar vuelos-->
+                                        <fieldset id="cajaBoton">
+                                             <input type="submit" value="Buscar vuelos"  id="form2" onclick="seleccion()">
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- div para la tabla de los vuelos -->
+    <div class="barra" id="pruebas">
+        <table id="tabla" >
+
+        </table>
+    </div>
+
+
+    <div id="tablaComp">
+
+    </div>
+
+</section>
+<!-- información de los cuadros de los dialogos cuando no hay vuelos disponibles-->
+<div id="error1"><span>No existen vuelos con esas características</span></div>
+<div id="error2"><span>No existen parejas de vuelos con esas características</span></div>
+
+<footer>
+    <!-- boton de página de inicio -->
+    <a href="" id="inicio"><input id="botonHome" type="button" value="Página de inicio"> </a>
+    <!-- información adicional de la página web -->
+    <p class="piePagina">© Consultora de vuelo 2020 - Todos los derechos reservados</p>
+</footer>
+
+<script src="javaScript/main.js"></script>
+<script src="javaScript/jquery.rateyo.js"></script>
+
+</body>
+</html>
